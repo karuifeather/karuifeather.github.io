@@ -1,0 +1,163 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap");
+
+:root {
+  --font-light: 300;
+  --font-regular: 400;
+  --font-bold: 700;
+
+  --color-red: #b73225;
+  --color-blue: #004e7c;
+  --color-maroon: #591c0b;
+  --color-grey: #ccc;
+  --color-grey-light: #ddd;
+  --color-black: #080808;
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+::selection {
+  background-color: var(--color-red);
+  color: #efefef;
+}
+
+::-webkit-scrollbar {
+  width: 1rem;
+  border-radius: 2rem;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #021334;
+}
+
+::-webkit-scrollbar-thumb {
+  background-image: linear-gradient(#20a59e, #8fcc8e);
+  border-radius: 2rem;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  box-sizing: border-box;
+  font-size: 1.6rem;
+  font-weight: var(--font-light);
+  font-family: "Lato", sans-serif;
+
+  display: flex;
+  height: 100%;
+  min-height: 100vh;
+  line-height: 1.7;
+}
+
+/* basic styling */
+p {
+  font-size: 1.7rem;
+  margin: 0.5rem 0;
+  letter-spacing: 0.1px;
+  word-spacing: 0.1px;
+}
+
+a:link,
+a:visited {
+  font-size: 2.2rem;
+  font-weight: var(--font-regular);
+  text-decoration: none;
+  color: var(--color-blue);
+  transition: all 0.3s;
+}
+
+a:hover {
+  color: var(--color-red);
+}
+
+a:active {
+  color: var(--color-maroon);
+}
+
+/* structure */
+.sidebar {
+  width: 35rem;
+  flex-shrink: 0;
+  background-color: var(--color-black);
+  padding: 4rem 2rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+main#main {
+  flex-grow: 1;
+  background-color: var(--color-grey);
+  padding: 2rem;
+}
+
+/* sidebar children */
+.sidebar img#profile {
+  height: 25rem;
+  width: 25rem;
+  border-radius: 50%;
+  object-fit: cover;
+  margin: 1rem 0 2rem;
+  box-shadow: 0 1rem 5rem rgba(#000, 0.9);
+}
+
+.sidebar .container {
+  padding: 0.5rem;
+}
+.sidebar p#bio {
+  font-size: 1.8rem;
+  color: var(--color-blue);
+  letter-spacing: 0.3px;
+  word-spacing: 0.2px;
+  font-weight: var(--font-regular);
+  margin: 0.4rem 0 5rem;
+}
+
+ul {
+  padding: 0.3rem;
+  list-style: none;
+}
+
+ul li {
+  padding: 0.2rem;
+}
+
+/* other components */
+.heading {
+  font-size: 4rem;
+  color: var(--color-red);
+  letter-spacing: 0.1px;
+  font-weight: var(--font-bold);
+}
+
+.title {
+  font-size: 3.5rem;
+  color: var(--color-blue);
+}
+
+.card {
+  box-shadow: 0 0.3rem 2rem rgba(0, 0, 0, 0.2);
+  background-color: var(--color-grey-light);
+  border-radius: 0.5rem;
+  width: 90%;
+  padding: 1.4rem 2rem;
+  margin: 3rem 0;
+}
+
+.card-title {
+  font-size: 3rem;
+  color: var(--color-maroon);
+}
+
+.card p {
+  font-size: 1.8rem;
+  font-weight: var(--font-regular);
+}

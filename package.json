@@ -1,0 +1,11 @@
+{
+  "name": "karuifeather.github.com",
+  "version": "1.0.0",
+  "description": "Karui Portfolio",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "mE",
+  "license": "ISC"
+}

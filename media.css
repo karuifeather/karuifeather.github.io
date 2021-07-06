@@ -1,0 +1,23 @@
+/* land */
+@media only screen and (max-width: 75em) {
+  html {
+    font-size: 56.25%;
+  }
+}
+
+/* tab port*/
+@media only screen and (max-width: 56.25em) {
+  html {
+    font-size: 50%;
+  }
+
+  body {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    width: 100vw;
+    height: 95vh;
+    justify-content: center;
+  }
+}
