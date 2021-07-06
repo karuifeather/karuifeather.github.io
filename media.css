@@ -20,4 +20,14 @@
     height: 95vh;
     justify-content: center;
   }
+
+  .card {
+    width: 95%;
+  }
+}
+
+@media only screen and (max-width: 28em) {
+  .card {
+    width: 98%;
+  }
 }
